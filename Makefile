@@ -48,6 +48,7 @@ download:
 
 
 setup:
+	@mkdir -p Output
 	cd $(SEB_DIR)/; \
 	$(MAKE)
 	cd $(KERN_DIR)/; \
