@@ -1,3 +1,5 @@
 .vscode/
 Output/
 winrun.bat
+SalernOS-EFI-Bootloader/
+SalernOS-Kernel-Private/
