@@ -1,7 +1,7 @@
 WORKING_DIRECTORY    = "$(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))"
 
-SEB_URL  			 = "https://github.com/tzyvoski/SalernOS-EFI-Bootloader"
-KERN_URL 			 = "https://github.com/tzyvoski/SalernOS-Kernel-Private"
+SEB_URL  			 = "https://github.com/Alessandro-Salerno/SalernOS-EFI-Bootloader"
+KERN_URL 			 = "https://github.com/Alessandro-Salerno/SalernOS-Kernel-Private"
 SEB_DIR				 = SalernOS-EFI-Bootloader
 KERN_DIR			 = SalernOS-Kernel-Private
 SEB_TARGET			 = bootloader
