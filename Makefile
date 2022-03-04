@@ -11,6 +11,8 @@ ASSETS_DIR			 = Assets
 OUTPUT_DIR			 = Output
 
 ARCH			     = x86_64
+CROSS_COMPILER_SUITE = $(ARCH)-linux-gnu-
+
 MAKE				 = make
 GIT  				 = git
 DOCKER	 			 = docker
@@ -23,9 +25,9 @@ DOCKER_GLOBAL_ARGS   = --rm -it -v $(WORKING_DIRECTORY):/root/env
 
 buildall:
 	cd $(SEB_DIR)/; \
-	$(MAKE) $(SEB_TARGET)
+	$(MAKE) $(SEB_TARGET) CROSS_COMPILE=$(CROSS_COMPILER_SUITE)
 	cd $(KERN_DIR)/; \
-	$(MAKE) $(KERN_TARGET)
+	$(MAKE) $(KERN_TARGET) CROSS_COMPILE=$(CROSS_COMPILER_SUITE)
 
 
 buildimg:
