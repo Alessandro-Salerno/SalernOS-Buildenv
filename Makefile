@@ -10,12 +10,13 @@ KERN_TARGET			 = kernel
 ASSETS_DIR			 = Assets
 OUTPUT_DIR			 = Output
 
+ARCH			     = x86_64
 MAKE				 = make
 GIT  				 = git
 DOCKER	 			 = docker
 DOCKER_INPUT		 = Docker
 DOCKER_OUTPUT 		 = salernos-buildenv
-DOCKER_PLATFORM      = linux/x86_64
+DOCKER_PLATFORM      = linux/$(ARCH)
 DOCKER_PLATFORM_ARGS = --platform $(DOCKER_PLATFORM)
 DOCKER_GLOBAL_ARGS   = --rm -it -v $(WORKING_DIRECTORY):/root/env
 
