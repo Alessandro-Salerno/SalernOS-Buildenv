@@ -15,7 +15,8 @@ GIT  				 = git
 DOCKER	 			 = docker
 DOCKER_INPUT		 = Docker
 DOCKER_OUTPUT 		 = salernos-buildenv
-DOCKER_GLOBAL_ARGS   = --rm -it -v $(WORKING_DIRECTORY):/root/env --platform linux/x86_64
+DOCKER_PLATFORM      = linux/x86_64
+DOCKER_GLOBAL_ARGS   = --rm -it -v $(WORKING_DIRECTORY):/root/env --platform $(DOCKER_PLATFORM)
 
 
 buildall:
@@ -44,7 +45,7 @@ buildimg:
 download:
 	$(GIT) clone $(SEB_URL)
 	$(GIT) clone $(KERN_URL)
-	$(DOCKER) build $(DOCKER_INPUT) --platform linux/x86_64 -t $(DOCKER_OUTPUT)
+	$(DOCKER) build $(DOCKER_INPUT) --platform $(DOCKER_PLATFORM) -t $(DOCKER_OUTPUT)
 
 
 setup:
