@@ -2,5 +2,5 @@
 Output/
 winrun.bat
 SalernOS-EFI-Bootloader/
-SalernOS-Kernel-Private/
+SalernOS-Kernel/
 .DS_Store
