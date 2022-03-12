@@ -55,7 +55,7 @@ download:
 setup:
 	@mkdir -p Output
 	cd $(SEB_DIR)/; \
-	$(MAKE)
+	$(MAKE) CROSS_COMPILE=$(CROSS_COMPILER_SUITE)
 	cd $(KERN_DIR)/; \
 	$(MAKE) setup
 
