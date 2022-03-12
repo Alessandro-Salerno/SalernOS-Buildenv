@@ -63,3 +63,8 @@ setup:
 enter:
 	$(DOCKER) run $(DOCKER_GLOBAL_ARGS) $(DOCKER_OUTPUT)
  
+ clean:
+	cd $(SEB_DIR); \
+	$(MAKE) clean
+	cd $(KERN_DIR); \
+	$(MAKE) clean
