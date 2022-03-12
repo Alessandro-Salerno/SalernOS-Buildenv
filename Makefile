@@ -1,9 +1,9 @@
 WORKING_DIRECTORY    = "$(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))"
 
-SEB_URL  			 = "https://github.com/Alessandro-Salerno/SalernOS-EFI-Bootloader"
-KERN_URL 			 = "https://github.com/Alessandro-Salerno/SalernOS-Kernel-Private"
 SEB_DIR				 = SalernOS-EFI-Bootloader
-KERN_DIR			 = SalernOS-Kernel-Private
+KERN_DIR			 = SalernOS-Kernel
+SEB_URL  			 = "https://github.com/Alessandro-Salerno/$(SEB_DIR)"
+KERN_URL 			 = "https://github.com/Alessandro-Salerno/$(KERN_DIR)"
 SEB_TARGET			 = bootloader
 KERN_TARGET			 = kernel
 
@@ -62,3 +62,4 @@ setup:
 
 enter:
 	$(DOCKER) run $(DOCKER_GLOBAL_ARGS) $(DOCKER_OUTPUT)
+ 
