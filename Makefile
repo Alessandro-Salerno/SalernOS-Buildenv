@@ -1,23 +1,23 @@
 WORKING_DIRECTORY    = "$(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))"
 
 SEB_DIR	             = SalernOS-EFI-Bootloader
-KERN_DIR	         = SalernOS-Kernel
+KERN_DIR             = SalernOS-Kernel
 SEB_URL	             = "https://github.com/Alessandro-Salerno/$(SEB_DIR)"
-KERN_URL	         = "https://github.com/Alessandro-Salerno/$(KERN_DIR)"
-SEB_TARGET	         = bootloader
+KERN_URL             = "https://github.com/Alessandro-Salerno/$(KERN_DIR)"
+SEB_TARGET           = bootloader
 KERN_TARGET	         = kernel
 
-ASSETS_DIR	         = Assets
-OUTPUT_DIR	         = Output
+ASSETS_DIR           = Assets
+OUTPUT_DIR           = Output
 
-ARCH	             = x86_64
+ARCH                 = x86_64
 CROSS_COMPILER_SUITE = $(ARCH)-linux-gnu-
 
-MAKE	             = make
+MAKE                 = make
 GIT	                 = git
-DOCKER	             = docker
-DOCKER_INPUT	     = Docker
-DOCKER_OUTPUT	     = salernos-buildenv
+DOCKER               = docker
+DOCKER_INPUT         = Docker
+DOCKER_OUTPUT        = salernos-buildenv
 DOCKER_PLATFORM	     = linux/$(ARCH)
 DOCKER_PLATFORM_ARGS = --platform $(DOCKER_PLATFORM)
 DOCKER_GLOBAL_ARGS   = --rm -it -v $(WORKING_DIRECTORY):/root/env
