@@ -5,7 +5,7 @@ KERN_DIR             = SalernOS-Kernel
 SEB_URL	             = "https://github.com/Alessandro-Salerno/$(SEB_DIR)"
 KERN_URL             = "https://github.com/Alessandro-Salerno/$(KERN_DIR)"
 SEB_TARGET           = bootloader
-KERN_TARGET	         = kernel
+KERN_TARGET          = kernel
 
 ASSETS_DIR           = Assets
 OUTPUT_DIR           = Output
