@@ -14,7 +14,7 @@ ARCH                 = x86_64
 CROSS_COMPILER_SUITE = $(ARCH)-linux-gnu-
 
 MAKE                 = make
-GIT	                 = git
+GIT                  = git
 DOCKER               = docker
 DOCKER_INPUT         = Docker
 DOCKER_OUTPUT        = salernos-buildenv
