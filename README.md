@@ -1,3 +1,6 @@
+> [!WARNING]
+> This repository is for historical purposes only. It is used as a monument to the year 2022, and may be used as a "nostalgia kit" to build older SalernOS versions from that year. The SalernOS Build Environment was discontinued in 2023 and is no longer in use. The [SalernOS repository](https://github.com/Alessandro-Salerno/SalernOS) now holds all the necessary files to build, test, and run SalernOS.
+
 ## SalernOS
 SalernOS is a small Toy OS I'm working on.
 
