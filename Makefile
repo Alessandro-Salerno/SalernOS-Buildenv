@@ -48,7 +48,7 @@ buildimg:
 
 download:
 	$(GIT) clone $(SEB_URL)
-	$(GIT) clone $(KERN_URL)
+	$(GIT) clone -b glorious-2022 $(KERN_URL)
 	$(DOCKER) build $(DOCKER_INPUT) -t $(DOCKER_OUTPUT)
 
 
